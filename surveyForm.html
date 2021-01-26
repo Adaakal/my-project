@@ -1,0 +1,54 @@
+<script src="surveyFormStyle.css"></script>
+<header id="header">
+  <h1 id="title">Personal Training Readiness Form</h1>
+</header>
+<div>
+  <p id="description">Assessing your readiness to begin personal training</p>
+</div>
+<body>
+  <form id="survey-form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
+    <fieldset id="contact-info">
+      <p id="nameInput">
+        <label id=name-label>Name</label></br>
+        <input type="text" id="name" placeholder="Name" required></br>
+      </p>
+      <p id="emailInput">
+        <label id=email-label>Email</label></br>  
+        <input type="email" id="email"  placeholder="E-Mail" required></br>
+      </p>
+      <p id="phoneNumber">
+        <label id=number-label>Number</label></br>
+        <input type="number" id="number" pattern="[0-9]{3}" min="10" max="11" placeholder="Phone Number" required>
+      </p>
+    </fieldset>
+    <fieldset id="contact-type">
+      <div id="radio-button">Desired form of Contact</br>
+          <input type="radio" name="radio" value="phone-call" />Phone Call
+          <input type="radio" name="radio" value="text-message" />Text Message 
+          <input type="radio" name="radio" value="email" />E-mail
+      </div>
+    </fieldset>
+    <fieldset id="dropdown">
+      <label id="dropdown">Desired Length of Session</br>
+        <select id="dropdown" name="selectstuff">
+           <option value="45mins" name="dropdown">45 minutes</option>
+           <option value="60mins" name="dropdown">60 minutes</option>
+           <option value="90mins" name="dropdown">90 minutes</option>
+        </select>
+      </label>  
+    </fieldset>
+      
+    <fieldset id="checkbox">
+      <label>Training Level</label></br>
+        <input type="checkbox" name="checkbox name" value="value" />Beginner
+        <input type="checkbox" name="checkbox name" value="value" />Intermediate
+        <input type="checkbox" name="checkbox name" value="value" />Advanced
+    </fieldset>
+    <div id="button" class="btn">
+      <button id="submit">Submit</button>
+    </div></br>
+    <div id="text-area">
+      <textarea id="text-area">Additional Comments</textarea>
+    </div> 
+  </form>
+</body>
